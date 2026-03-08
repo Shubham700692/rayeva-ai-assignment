@@ -1,0 +1,407 @@
+PROMPT:
+
+You are a sustainability B2B consultant.
+
+Generate a sustainable product proposal.
+
+Company: GreenTech Solutions
+Industry: IT
+Budget: 50000
+Category: office supplies
+Focus: plastic-free, recycled
+
+Return ONLY valid JSON:
+
+{
+ "product_mix": [
+   {
+     "product": "",
+     "quantity": "",
+     "unit_price": "",
+     "total": ""
+   }
+ ],
+ "budget_allocation": "",
+ "estimated_cost_breakdown": {},
+ "impact_summary": ""
+}
+
+
+RESPONSE:
+```json
+{
+  "product_mix": [
+    {
+      "product": "Recycled Paper Notebooks (A4, 100% post-consumer recycled paper, staple-bound)",
+      "quantity": 1300,
+      "unit_price": 7,
+      "total": 9100
+    },
+    {
+      "product": "Bamboo Ballpoint Pens (refillable, black ink, metal clip)",
+      "quantity": 2200,
+      "unit_price": 3,
+      "total": 6600
+    },
+    {
+      "product": "Recycled Kraft Paper Files/Folders (Letter Size, 100% recycled content, plastic-free coating)",
+      "quantity": 2500,
+      "unit_price": 1.50,
+      "total": 3750
+    },
+    {
+      "product": "Metal Staplers (heavy-duty, all-metal construction, includes recycled steel staples)",
+      "quantity": 200,
+      "unit_price": 22,
+      "total": 4400
+    },
+    {
+      "product": "Metal Binder Clips (assorted sizes, stainless steel)",
+      "quantity": 500,
+      "unit_price": 5,
+      "total": 2500
+    },
+    {
+      "product": "Recycled Content Printer Paper (80gsm, 100% post-consumer waste, A4)",
+      "quantity": 1500,
+      "unit_price": 9,
+      "total": 13500
+    },
+    {
+      "product": "Reusable Ceramic Coffee Mugs (customizable with logo, high-quality, lead-free)",
+      "quantity": 300,
+      "unit_price": 15,
+      "total": 4500
+    },
+    {
+      "product": "Recycled Aluminium Rulers (30cm, laser-etched markings)",
+      "quantity": 400,
+      "unit_price": 6,
+      "total": 2400
+    },
+    {
+      "product": "Plant-Based & Biodegradable Sticky Notes (Tree-free paper, natural corn-starch adhesive)",
+      "quantity": 1000,
+      "unit_price": 2,
+      "total": 2000
+    },
+    {
+      "product": "Compostable Waste Bags (for office bins, made from corn starch)",
+      "quantity": 50,
+      "unit_price": 25,
+      "total": 1250
+    }
+  ],
+  "budget_allocation": "The entire budget of $50,000 is allocated to the procurement of a comprehensive mix of plastic-free and recycled office supplies, covering essential stationery, paper products, and general office consumables for GreenTech Solutions.",
+  "estimated_cost_breakdown": {
+    "Paper Products (Notebooks, Printer Paper, Sticky Notes, Folders)": 28350,
+    "Writing Instruments (Pens)": 6600,
+    "Desk Accessories (Staplers, Binder Clips, Rulers)": 9300,
+    "Office Consumables (Mugs, Waste Bags)": 5750
+  },
+  "impact_summary": "This sustainable product proposal will significantly enhance GreenTech Solutions' environmental stewardship and corporate image. By transitioning to 100% plastic-free and recycled office supplies, GreenTech will achieve: \n\n*   **Reduced Virgin Resource Consumption**: Minimizing the demand for new plastics, timber, and other raw materials, conserving natural resources, and reducing the energy intensity associated with new material production.\n*   **Waste Diversion & Circular Economy**: Significantly decreasing landfill contributions by utilizing recycled content and compostable alternatives, fostering a more circular economy within its operational supply chain.\n*   **Lower Carbon Footprint**: Manufacturing products from recycled materials typically requires less energy and emits fewer greenhouse gases compared to production from virgin sources, contributing to GreenTech's climate action goals.\n*   **Enhanced Brand Reputation**: Reinforcing GreenTech's commitment to sustainability, attracting environmentally conscious talent and clients, and solidifying its position as a responsible industry leader. This initiative aligns perfectly with the company's 'GreenTech' ethos, demonstrating tangible action behind its name."
+}
+```
+
+PROMPT:
+
+You are a sustainability B2B consultant.
+
+Generate a sustainable product proposal.
+
+Company: skillhub
+Industry: education
+Budget: ₹50000 INR
+Category: best education 
+Focus: mastering skills, affordable
+
+Return ONLY valid JSON:
+
+{
+ "product_mix": [
+   {
+     "product": "",
+     "quantity": "",
+     "unit_price": "",
+     "total": ""
+   }
+ ],
+ "budget_allocation": "",
+ "estimated_cost_breakdown": {},
+ "impact_summary": ""
+}
+
+
+RESPONSE:
+```json
+{
+  "product_mix": [
+    {
+      "product": "Content Dev: Urban Composting & Micro-Gardening Module (Digital)",
+      "quantity": 1,
+      "unit_price": 8000,
+      "total": 8000
+    },
+    {
+      "product": "Content Dev: Digital Carbon Footprint Reduction Module (Interactive)",
+      "quantity": 1,
+      "unit_price": 8000,
+      "total": 8000
+    },
+    {
+      "product": "Content Dev: Ethical Consumerism & Budgeting Module (E-book + Workbook)",
+      "quantity": 1,
+      "unit_price": 8000,
+      "total": 8000
+    },
+    {
+      "product": "Graphic Design & Branding for Eco-Skills Packs (Unified Aesthetics)",
+      "quantity": 1,
+      "unit_price": 12000,
+      "total": 12000
+    },
+    {
+      "product": "Pilot Digital Marketing Campaign for Launch",
+      "quantity": 1,
+      "unit_price": 10000,
+      "total": 10000
+    },
+    {
+      "product": "Project Management & Operational Overhead",
+      "quantity": 1,
+      "unit_price": 4000,
+      "total": 4000
+    }
+  ],
+  "budget_allocation": "The entire budget of ₹50,000 INR is allocated towards the development, design, and initial launch marketing of three digital 'Eco-Skills Starter Packs' focused on practical sustainability skills for SkillHub's learners.",
+  "estimated_cost_breakdown": {
+    "Content Development": {
+      "Urban Composting & Micro-Gardening Module": 8000,
+      "Digital Carbon Footprint Reduction Module": 8000,
+      "Ethical Consumerism & Budgeting Module": 8000
+    },
+    "Graphic Design & Branding": 12000,
+    "Pilot Digital Marketing Campaign": 10000,
+    "Project Management & Operational Overhead": 4000
+  },
+  "impact_summary": "This proposal leverages SkillHub's focus on skill mastery and affordability to deliver high-impact, sustainable education. The 'Eco-Skills Starter Packs' are 100% digital, eliminating physical waste and significantly reducing the carbon footprint associated with traditional learning materials. By teaching practical, actionable skills like urban composting, digital carbon footprint reduction, and ethical consumption, the product directly empowers learners to adopt more sustainable lifestyles, contributing to environmental preservation and resource efficiency. Its affordable pricing and digital accessibility ensure social equity, making vital sustainability knowledge available to a broader audience, fostering a community of environmentally conscious and skilled individuals ready to make a positive impact."
+}
+```
+
+PROMPT:
+
+You are a sustainability B2B consultant.
+
+Generate a sustainable product proposal.
+
+Company: skillhub
+Industry: education
+Budget: ₹50000 INR
+Category: best education 
+Focus: mastering skills, affordable
+
+Return ONLY valid JSON:
+
+{
+ "product_mix": [
+   {
+     "product": "",
+     "quantity": "",
+     "unit_price": "",
+     "total": ""
+   }
+ ],
+ "budget_allocation": "",
+ "estimated_cost_breakdown": {},
+ "impact_summary": ""
+}
+
+
+RESPONSE:
+```json
+{
+  "product_mix": [
+    {
+      "product": "Green Skills Micro-Course Content Development",
+      "quantity": 2,
+      "unit_price": 15000,
+      "total": 30000
+    },
+    {
+      "product": "Sustainable Learning Resource Hub - Curation & Integration",
+      "quantity": 1,
+      "unit_price": 10000,
+      "total": 10000
+    },
+    {
+      "product": "Digital Eco-Skill Badges & Certificate System Setup",
+      "quantity": 1,
+      "unit_price": 5000,
+      "total": 5000
+    },
+    {
+      "product": "Pilot Program Digital Promotion & Outreach",
+      "quantity": 1,
+      "unit_price": 5000,
+      "total": 5000
+    }
+  ],
+  "budget_allocation": "₹50000 INR",
+  "estimated_cost_breakdown": {
+    "Content Development & Expert Fees": "₹30000",
+    "Platform Curation & Integration (Internal Labor)": "₹10000",
+    "Digital Credential System Setup & Design": "₹5000",
+    "Marketing & Outreach (Pilot Launch)": "₹5000"
+  },
+  "impact_summary": "This proposal focuses on developing a 'Skillhub Green Learning Pathway,' offering affordable, skill-focused digital education in sustainability. \n\n**Environmental Impact:** Primarily digital, this initiative drastically reduces paper consumption and the carbon footprint associated with physical learning materials. By equipping learners with green skills (e.g., circular economy, sustainable business), it indirectly contributes to broader environmental stewardship and resource efficiency in various industries.\n\n**Social Impact:** It makes 'best education' in critical future-proof areas accessible and affordable, democratizing learning for a wider audience. By providing recognized digital credentials, it enhances learner employability in the growing green economy, fostering social equity and empowering individuals to contribute to sustainable development.\n\n**Economic Impact:** Leveraging Skillhub's existing digital infrastructure keeps operational costs low, enabling scalable and affordable course offerings. This new pathway positions Skillhub as a leader in sustainable education, attracting a new segment of learners and supporting the global transition to a green economy by building a skilled workforce."
+}
+```
+
+PROMPT:
+
+You are a sustainability B2B consultant.
+
+Generate a sustainable product proposal.
+
+Company: skillhub
+Industry: education
+Budget: ₹50000 INR
+Category: best education 
+Focus: mastering skills, affordable
+
+Return ONLY valid JSON:
+
+{
+ "product_mix": [
+   {
+     "product": "",
+     "quantity": "",
+     "unit_price": "",
+     "total": ""
+   }
+ ],
+ "budget_allocation": "",
+ "estimated_cost_breakdown": {},
+ "impact_summary": ""
+}
+
+
+RESPONSE:
+```json
+{
+  "product_mix": [
+    {
+      "product": "Development of 'Sustainable Digital Marketing' Module (Content Curation, Scripting, Quiz Design)",
+      "quantity": 1,
+      "unit_price": 20000,
+      "total": 20000
+    },
+    {
+      "product": "Development of 'Eco-Conscious Project Management' Module (Content Curation, Scripting, Quiz Design)",
+      "quantity": 1,
+      "unit_price": 20000,
+      "total": 20000
+    },
+    {
+      "product": "Platform Integration & Accessibility Optimization for Green Learning Modules",
+      "quantity": 1,
+      "unit_price": 5000,
+      "total": 5000
+    },
+    {
+      "product": "Initial Digital Launch Promotion (Targeted Social Media & Email Campaign)",
+      "quantity": 1,
+      "unit_price": 5000,
+      "total": 5000
+    }
+  ],
+  "budget_allocation": "80% of the budget is allocated to specialized content development for the core Green Learning Series modules, 10% for seamless platform integration and user experience optimization, and 10% for initial digital promotion to reach the target audience.",
+  "estimated_cost_breakdown": {
+    "Content Creation (Subject Matter Expert Fees, 2 Modules)": "₹40,000",
+    "Technical Integration & Quality Assurance (UX/UI, mobile optimization)": "₹5,000",
+    "Digital Marketing & Launch Campaign (Social media ads, email blasts)": "₹5,000"
+  },
+  "impact_summary": "This proposal introduces the 'SkillHub Green Learning Series' pilot, offering affordable, high-quality digital modules focused on in-demand sustainability-oriented skills. Environmentally, it promotes a paperless, remote learning model, significantly reducing resource consumption and carbon footprint associated with traditional education. It also directly educates learners on green skills, fostering a more environmentally conscious workforce. Socially, it enhances accessibility to future-proof skills, empowering individuals with knowledge crucial for a sustainable transition and promoting inclusive education. Economically, it diversifies SkillHub's offerings, strengthens its brand as a responsible and innovative educator, and equips learners with competencies highly valued in the evolving green economy, aligning perfectly with SkillHub's commitment to mastering skills and affordable, best education."
+}
+```
+
+PROMPT:
+
+You are a sustainability B2B consultant.
+
+Generate a sustainable product proposal.
+
+Company: GreenTech Solutions
+Industry: IT
+Budget: ₹50000 INR
+Category: office supplies
+Focus: plastic-free, recycled
+
+Return ONLY valid JSON:
+
+{
+ "product_mix": [
+   {
+     "product": "",
+     "quantity": "",
+     "unit_price": "",
+     "total": ""
+   }
+ ],
+ "budget_allocation": "",
+ "estimated_cost_breakdown": {},
+ "impact_summary": ""
+}
+
+
+RESPONSE:
+```json
+{
+  "product_mix": [
+    {
+      "product": "Recycled Paper Notebooks (A5, 100 pages, unbleached)",
+      "quantity": 150,
+      "unit_price": 100,
+      "total": 15000
+    },
+    {
+      "product": "Bamboo & Recycled Paper Pens (Blue Ink, refillable)",
+      "quantity": 250,
+      "unit_price": 40,
+      "total": 10000
+    },
+    {
+      "product": "Cork Mousepads (Natural & Durable)",
+      "quantity": 50,
+      "unit_price": 200,
+      "total": 10000
+    },
+    {
+      "product": "Recycled Cardboard Desk Organizers (Modular)",
+      "quantity": 30,
+      "unit_price": 120,
+      "total": 3600
+    },
+    {
+      "product": "Seed Paper Coasters (Custom branded, plantable herbs/flowers)",
+      "quantity": 100,
+      "unit_price": 50,
+      "total": 5000
+    },
+    {
+      "product": "Plantable Seed Pencils (Graphite, wood-free, various seeds)",
+      "quantity": 100,
+      "unit_price": 35,
+      "total": 3500
+    }
+  ],
+  "budget_allocation": 50000,
+  "estimated_cost_breakdown": {
+    "product_procurement": 47100,
+    "shipping_and_logistics": 2000,
+    "project_management_and_contingency": 900
+  },
+  "impact_summary": "This sustainable office supplies proposal for GreenTech Solutions delivers significant environmental benefits:\n*   **Plastic Waste Reduction:** Eliminates hundreds of plastic items from daily office use, replacing them with bamboo, cork, paper, and plant-based alternatives.\n*   **Resource Conservation:** Utilizes high percentages of post-consumer recycled content in notebooks, pens, and desk organizers, reducing the demand for virgin materials and saving energy.\n*   **Waste Diversion:** Supports circular economy principles by keeping valuable materials in use and out of landfills.\n*   **Biodiversity & Engagement:** Introduces plantable seed paper and pencils, promoting a unique connection to nature and enhancing employee engagement in sustainability initiatives.\n*   **Enhanced Brand Image:** Reinforces GreenTech Solutions' commitment to environmental responsibility, aligning internal practices with external sustainability goals."
+}
+```
+
