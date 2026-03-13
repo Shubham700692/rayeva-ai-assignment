@@ -1,0 +1,335 @@
+PROMPT:
+
+You are a sustainability B2B consultant.
+
+Generate a sustainable product proposal.
+
+Company: skillhub
+Industry: ecommerce
+Budget: ₹25000 INR
+Category: undefined
+Focus: 
+
+Return ONLY valid JSON:
+
+{
+ "product_mix": [
+   {
+     "product": "",
+     "quantity": "",
+     "unit_price": "",
+     "total": ""
+   }
+ ],
+ "budget_allocation": "",
+ "estimated_cost_breakdown": {},
+ "impact_summary": ""
+}
+
+
+RESPONSE:
+```json
+{
+  "product_mix": [
+    {
+      "product": "Recycled Paper Notebook (A5, 80-100 pages, branded)",
+      "quantity": "50",
+      "unit_price": "120",
+      "total": "6000"
+    },
+    {
+      "product": "Bamboo Pen (branded)",
+      "quantity": "50",
+      "unit_price": "100",
+      "total": "5000"
+    },
+    {
+      "product": "Plantable Seed Pencil (with various seeds)",
+      "quantity": "50",
+      "unit_price": "50",
+      "total": "2500"
+    },
+    {
+      "product": "Branded Jute Drawstring Pouch (for kit packaging)",
+      "quantity": "50",
+      "unit_price": "180",
+      "total": "9000"
+    },
+    {
+      "product": "Seed Paper Bookmark (with Skillhub branding)",
+      "quantity": "50",
+      "unit_price": "40",
+      "total": "2000"
+    }
+  ],
+  "budget_allocation": "₹25000 INR",
+  "estimated_cost_breakdown": {
+    "Product Sourcing & Manufacturing (for 50 'Eco-Learner Kits')": "₹24500",
+    "Logistics & Shipping (supplier to Skillhub)": "₹300",
+    "Contingency/Miscellaneous": "₹200"
+  },
+  "impact_summary": "This 'Eco-Learner Kit' proposal is designed to align Skillhub with sustainability values, offering a tangible, eco-friendly product that resonates with a learning-focused audience. Environmentally, it significantly reduces reliance on virgin materials and plastic by utilizing recycled paper, bamboo, and biodegradable plantable items. The reusable jute pouch further minimizes waste. Socially, it educates and engages users in sustainable practices, promoting a 'grow your skills, grow your planet' mindset. Economically, it creates a unique, value-added offering for Skillhub, enhancing brand perception, attracting eco-conscious customers, and fostering loyalty through responsible product innovation. This initiative positions Skillhub as a forward-thinking brand committed to both personal and planetary development."
+}
+``````json
+{
+  "product_mix": [
+    {
+      "product": "Recycled Paper Notebook (A5, 80-100 pages, branded)",
+      "quantity": "50",
+      "unit_price": "120",
+      "total": "6000"
+    },
+    {
+      "product": "Bamboo Pen (branded with Skillhub logo)",
+      "quantity": "50",
+      "unit_price": "100",
+      "total": "5000"
+    },
+    {
+      "product": "Plantable Seed Pencil (contains herb/flower seeds)",
+      "quantity": "50",
+      "unit_price": "50",
+      "total": "2500"
+    },
+    {
+      "product": "Branded Jute Drawstring Pouch (for kit packaging)",
+      "quantity": "50",
+      "unit_price": "180",
+      "total": "9000"
+    },
+    {
+      "product": "Seed Paper Bookmark (with Skillhub branding, plantable)",
+      "quantity": "50",
+      "unit_price": "40",
+      "total": "2000"
+    }
+  ],
+  "budget_allocation": "₹25000 INR",
+  "estimated_cost_breakdown": {
+    "Product Sourcing & Manufacturing (for 50 'Eco-Learner Kits')": "₹24500",
+    "Logistics & Shipping (supplier to Skillhub)": "₹300",
+    "Contingency/Miscellaneous": "₹200"
+  },
+  "impact_summary": "This 'Skillhub Eco-Learner Kit' proposal offers a tangible, sustainable product line perfectly aligned with Skillhub's focus on learning and growth. Environmentally, it significantly reduces plastic waste and reliance on virgin materials by utilizing recycled paper, biodegradable bamboo, and plantable elements. The reusable jute pouch further minimizes packaging waste. Socially, it promotes environmental awareness and encourages sustainable practices among Skillhub's learner community, fostering a 'grow your skills, grow your planet' ethos. Economically, it creates a unique, value-added offering for Skillhub, enhancing brand perception, attracting eco-conscious customers, and differentiating the platform in a competitive market, all while demonstrating a commitment to responsible business practices."
+}
+```
+
+PROMPT:
+
+You are a sustainability B2B consultant.
+
+Generate a sustainable product proposal.
+
+Company: skillhub
+Industry: ecommerce
+Budget: ₹25000 INR
+Category: undefined
+Focus: 
+
+Return ONLY valid JSON:
+
+{
+ "product_mix": [
+   {
+     "product": "",
+     "quantity": "",
+     "unit_price": "",
+     "total": ""
+   }
+ ],
+ "budget_allocation": "",
+ "estimated_cost_breakdown": {},
+ "impact_summary": ""
+}
+
+
+RESPONSE:
+```json
+{
+  "product_mix": [
+    {
+      "product": "100% Recycled Kraft Paper Mailers (Assorted Sizes)",
+      "quantity": 500,
+      "unit_price": 20.00,
+      "total": 10000.00
+    },
+    {
+      "product": "Water-Activated Paper Tape (Brown, 70mm x 50m)",
+      "quantity": 5,
+      "unit_price": 700.00,
+      "total": 3500.00
+    },
+    {
+      "product": "Recycled Content Shipping Labels (Direct Thermal, 100x150mm)",
+      "quantity": 10,
+      "unit_price": 400.00,
+      "total": 4000.00
+    },
+    {
+      "product": "Kraft Paper Void Fill (Crinkle Cut or Shredded, large bag/box)",
+      "quantity": 2,
+      "unit_price": 2500.00,
+      "total": 5000.00
+    }
+  ],
+  "budget_allocation": "25000 INR",
+  "estimated_cost_breakdown": {
+    "Product Procurement": 22500.00,
+    "Shipping & Handling": 1500.00,
+    "Contingency & Miscellaneous": 1000.00
+  },
+  "impact_summary": "This proposal focuses on transitioning Skillhub's shipping operations to a more sustainable model by procuring eco-friendly packaging materials. As an e-commerce company, packaging represents a significant portion of its environmental footprint. By investing ₹25,000 INR, Skillhub will achieve the following impacts:\n\n1.  **Plastic Reduction:** Eliminate traditional plastic poly mailers, plastic sealing tape, and petroleum-based void fillers, significantly reducing the company's reliance on virgin plastics.\n2.  **Waste Diversion:** All proposed materials are 100% recycled content and are either recyclable through standard paper streams or compostable, diverting waste from landfills.\n3.  **Lower Carbon Footprint:** Manufacturing recycled paper products generally consumes less energy and generates fewer greenhouse gas emissions compared to virgin plastic alternatives.\n4.  **Enhanced Brand Image:** Position Skillhub as an environmentally conscious leader within the e-commerce industry, appealing to eco-aware customers and partners.\n5.  **Customer Education:** Provide a tangible example of sustainable practices, encouraging customers to recycle or compost packaging responsibly.\n\nThis initial investment covers an estimated 500 shipments with fully sustainable packaging, laying a strong foundation for Skillhub's broader sustainability journey and demonstrating a tangible commitment to environmental responsibility."
+}
+```
+
+PROMPT:
+
+You are a sustainability B2B consultant.
+
+Generate a sustainable product proposal.
+
+Company: shubh restuarent
+Industry: hotel
+Budget: ₹12000 INR
+Category: undefined
+Focus: 
+
+Return ONLY valid JSON:
+
+{
+ "product_mix": [
+   {
+     "product": "",
+     "quantity": "",
+     "unit_price": "",
+     "total": ""
+   }
+ ],
+ "budget_allocation": "",
+ "estimated_cost_breakdown": {},
+ "impact_summary": ""
+}
+
+
+RESPONSE:
+```json
+{
+  "product_mix": [
+    {
+      "product": "Commercial Grade Food Waste Collection Bin (50L)",
+      "quantity": "1",
+      "unit_price": "4500",
+      "total": "4500"
+    },
+    {
+      "product": "Compostable Bin Liners (50L, Pack of 50)",
+      "quantity": "1",
+      "unit_price": "1000",
+      "total": "1000"
+    },
+    {
+      "product": "Energy-Efficient LED Bulbs (9W E27, Cool White)",
+      "quantity": "15",
+      "unit_price": "200",
+      "total": "3000"
+    },
+    {
+      "product": "Segregated Recycling Bins (Set of 3 - Paper, Plastic, General Waste)",
+      "quantity": "1",
+      "unit_price": "1800",
+      "total": "1800"
+    },
+    {
+      "product": "Reusable Microfiber Cleaning Cloths (Pack of 10)",
+      "quantity": "2",
+      "unit_price": "700",
+      "total": "1400"
+    }
+  ],
+  "budget_allocation": "11700",
+  "estimated_cost_breakdown": {
+    "Waste Management Solutions": "7300",
+    "Energy Efficiency Upgrades": "3000",
+    "Sustainable Cleaning Supplies": "1400",
+    "Buffer/Contingency": "300"
+  },
+  "impact_summary": "This proposal focuses on immediate, visible sustainability improvements for Shubh Restaurant by addressing waste management, energy consumption, and responsible cleaning practices. The implementation of a food waste collection system and segregated recycling bins will significantly divert waste from landfills, reducing environmental impact and potentially future disposal costs. Replacing conventional bulbs with energy-efficient LEDs will lower electricity consumption, leading to reduced operational costs and a smaller carbon footprint. The introduction of reusable microfiber cloths will decrease reliance on disposable paper products, conserving resources and reducing waste. These changes collectively enhance the restaurant's green credentials, appealing to environmentally conscious customers and contributing to a more sustainable operation."
+}
+```
+
+PROMPT:
+
+You are a sustainability B2B consultant.
+
+Generate a sustainable product proposal.
+
+Company: GreenTech Logistics
+Industry: Logistics
+Budget: ₹50000 INR
+Category: undefined
+Focus: 
+
+Return ONLY valid JSON:
+
+{
+ "product_mix": [
+   {
+     "product": "",
+     "quantity": "",
+     "unit_price": "",
+     "total": ""
+   }
+ ],
+ "budget_allocation": "",
+ "estimated_cost_breakdown": {},
+ "impact_summary": ""
+}
+
+
+RESPONSE:
+```json
+{
+  "product_mix": [
+    {
+      "product": "Biodegradable Packing Peanuts (Corn Starch Based)",
+      "quantity": "10 bags (approx. 15 cu ft/bag)",
+      "unit_price": "₹2500",
+      "total": "₹25000"
+    },
+    {
+      "product": "Water-Activated Paper Tape (70mm x 150m)",
+      "quantity": "15 rolls",
+      "unit_price": "₹600",
+      "total": "₹9000"
+    },
+    {
+      "product": "Manual Water-Activated Tape Dispenser",
+      "quantity": "1 unit",
+      "unit_price": "₹7000",
+      "total": "₹7000"
+    },
+    {
+      "product": "Recycled Content Stretch Film (500mm x 300m, 50% PCR)",
+      "quantity": "2 rolls",
+      "unit_price": "₹3500",
+      "total": "₹7000"
+    },
+    {
+      "product": "Pilot Implementation & Training Materials",
+      "quantity": "1 (service/materials bundle)",
+      "unit_price": "₹2000",
+      "total": "₹2000"
+    }
+  ],
+  "budget_allocation": "The budget of ₹50,000 will be strategically allocated to launch a pilot program for sustainable packaging. This includes procurement of biodegradable void fill, water-activated paper tape with a manual dispenser, recycled content stretch film, and essential materials for pilot implementation and staff training.",
+  "estimated_cost_breakdown": {
+    "Biodegradable Packing Peanuts": "₹25000",
+    "Water-Activated Paper Tape": "₹9000",
+    "Manual Water-Activated Tape Dispenser": "₹7000",
+    "Recycled Content Stretch Film": "₹7000",
+    "Pilot Implementation & Training Materials": "₹2000"
+  },
+  "impact_summary": "This proposal aims to significantly reduce GreenTech Logistics' environmental footprint related to packaging. By replacing virgin plastic void fill and adhesive tape with biodegradable and paper-based alternatives, and introducing recycled content stretch film, the company will: \n1.  **Reduce Plastic Waste:** Eliminate thousands of single-use plastic pieces from the waste stream. \n2.  **Enhance Recyclability:** Improve the end-of-life recyclability of shipped packages, as paper tape allows boxes to be recycled without tape removal. \n3.  **Lower Carbon Footprint:** Decrease demand for virgin plastic production, contributing to reduced greenhouse gas emissions. \n4.  **Boost Brand Image:** Position GreenTech Logistics as an industry leader in sustainable practices, appealing to eco-conscious clients and improving corporate social responsibility. \n5.  **Foundation for Scaling:** Establish a tangible, measurable pilot that can be scaled across operations for broader impact."
+}
+```
+

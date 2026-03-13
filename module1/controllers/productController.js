@@ -34,7 +34,7 @@ async function generateCategory(req, res) {
     if (aiResult.confidence_score < 60) {
     console.log("⚠️ Low AI confidence. Manual review recommended.");
     }else{
-      console.log("you can prefer");
+      console.log("");
     }
 
     const product = new Product({

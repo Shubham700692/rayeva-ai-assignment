@@ -1,122 +1,218 @@
-# AI-Powered Product Categorization API
+# Rayeva AI Assignment – AI Powered Backend Services
 
-This project is a backend service that uses **Artificial Intelligence** to automatically classify ecommerce products based on their name and description. The system analyzes product details and returns structured information such as category, subcategory, SEO tags, sustainability indicators, and an AI confidence score.
+This project is a backend system that demonstrates how **Artificial Intelligence can automate business processes in ecommerce and B2B commerce systems**.
 
-The goal of this project is to demonstrate how **AI can assist ecommerce platforms** in organizing product catalogs and improving product discoverability.
+The project contains **two AI-powered modules**:
 
----
+**Module 1 – AI Product Categorization API**
+Automatically classifies ecommerce products using AI.
 
-## Project Overview
+**Module 2 – AI B2B Proposal Generator**
+Generates sustainability-focused product proposals for companies based on their requirements and budget.
 
-Manually categorizing thousands of products in an ecommerce platform can be time-consuming and inconsistent. This API automates that process using an AI model.
-
-When a product name and description are sent to the API, the system:
-
-1. Sends the product information to an AI model.
-2. The AI analyzes the product context.
-3. It returns structured metadata for the product.
-4. The backend validates the AI response.
-5. The product is stored in MongoDB.
-
-This allows ecommerce platforms to **quickly organize products and generate useful search tags automatically.**
+The goal of this project is to demonstrate how **AI can be integrated with backend services to automate catalog management, generate business proposals, and improve operational efficiency.**
 
 ---
 
-## Key Features
+# Project Overview
 
- **Automatic Product Categorization**
-  AI determines the most relevant category and subcategory.
+Manual product classification and B2B proposal creation are time-consuming processes for many companies.
 
-  **SEO Tag Generation**
-  The system generates multiple search-friendly keywords for better discoverability.
+This project solves those problems using AI.
 
-  **Sustainability Detection**
-  Products related to eco-friendly materials or reuse can be flagged.
+The system provides two core capabilities:
 
-  **AI Confidence Score**
-  The model returns a confidence value (0–100) representing how certain it is about the classification.
+### Module 1 – Product Catalog Intelligence
 
-  **Duplicate Product Check**
-  Prevents creating duplicate entries if the product already exists.
+Automatically analyzes product information and generates:
 
-  **Response Validation**
-  AI responses are validated to ensure the structure is correct before saving to the database.
+* Product category
+* Subcategory
+* SEO tags
+* Sustainability indicators
+* AI confidence score
 
-  **Logging**
-  Prompts and responses are logged to help monitor AI behavior and debug issues.
+This helps ecommerce platforms **organize product catalogs quickly and improve search discoverability.**
 
 ---
 
-## Technology Stack
+### Module 2 – AI B2B Proposal Generation
 
-This project uses a modern backend stack:
+Generates sustainability-focused **product procurement proposals** for companies.
 
-Node.js – JavaScript runtime environment
-Express.js– REST API framework
-MongoDB– NoSQL database for product storage
-Google Gemini API – AI model used for product classification
-AJV – JSON schema validation for AI responses
-dotenv – Environment variable management
-Nodemon – Development server auto-reload
+The system analyzes:
+
+* Company information
+* Industry
+* Budget
+* Sustainability goals
+
+Then the AI produces a structured proposal including:
+
+* Recommended sustainable product mix
+* Budget allocation
+* Cost breakdown
+* Sustainability impact summary
+
+Backend validation ensures that the **generated proposal stays within the client’s budget.**
 
 ---
 
-## Project Folder Structure
+# Key Features
 
-```id="struct01"
-backend
+## Module 1 – Product Categorization
+
+**Automatic Product Categorization**
+
+AI determines the most relevant category and subcategory.
+
+**SEO Tag Generation**
+
+The system generates multiple search-friendly keywords for product discoverability.
+
+**Sustainability Detection**
+
+Products related to eco-friendly materials or reuse can be flagged.
+
+**AI Confidence Score**
+
+The AI returns a confidence score (0–100) representing how certain the model is about its classification.
+
+**Duplicate Product Detection**
+
+Prevents duplicate products from being stored in the database.
+
+**Response Validation**
+
+AI responses are validated before being stored.
+
+**Database Storage**
+
+Validated products are saved in MongoDB.
+
+---
+
+## Module 2 – B2B Proposal Generator
+
+**AI Generated Product Mix**
+
+Generates a list of recommended sustainable products.
+
+**Budget Based Planning**
+
+Proposals are generated within the client's specified budget.
+
+**Cost Breakdown**
+
+Provides estimated cost distribution across product categories.
+
+**Impact Summary**
+
+Explains the environmental benefits of the proposal.
+
+**Business Logic Validation**
+
+Backend verifies that the total proposal cost does not exceed the budget.
+
+**AI Logging**
+
+All AI prompts and responses are logged for monitoring and debugging.
+
+---
+
+# Technology Stack
+
+This project uses a modern backend architecture:
+
+**Node.js** – JavaScript runtime environment
+**Express.js** – REST API framework
+**MongoDB** – Database for storing product data (Module 1)
+**Google Gemini API** – AI model used for generation and classification
+**AJV** – JSON schema validation
+**dotenv** – Environment variable management
+**Nodemon** – Development server auto reload
+
+---
+
+# Project Folder Structure
+
+```
+rayeva-ai-assignment
 │
-├── config
-│   └── db.js                # MongoDB connection setup
+├── module1
+│   ├── config
+│   │   └── db.js
+│   │
+│   ├── controllers
+│   │   └── productController.js
+│   │
+│   ├── models
+│   │   └── Product.js
+│   │
+│   ├── routes
+│   │   └── productRoutes.js
+│   │
+│   ├── services
+│   │   └── aiService.js
+│   │
+│   ├── utils
+│   │   ├── validator.js
+│   │   └── logger.js
+│   │
+│   └── server.js
 │
-├── controllers
-│   └── productController.js # API logic
+├── module2
+│   ├── controllers
+│   │   └── proposalController.js
+│   │
+│   ├── models
+│   │   └── proposalModel.js
+│   │
+│   ├── routes
+│   │   └── proposalRoutes.js
+│   │
+│   ├── services
+│   │   └── aiProposalService.js
+│   │
+│   ├── utils
+│   │   └── geminiClient.js
+│   │
+│   ├── logs
+│   │   └── ai_logs.txt
+│   │
+│   └── app.js
 │
-├── models
-│   └── Product.js           # MongoDB schema
-│
-├── routes
-│   └── productRoutes.js     # API routes
-│
-├── services
-│   └── aiService.js         # AI integration
-│
-├── utils
-│   ├── validator.js         # Response validation
-│   └── logger.js            # Logging utility
-│
-├── server.js                # Application entry point
-└── package.json
+└── README.md
 ```
 
 ---
 
-## Installation and Setup
+# Installation and Setup
 
-### 1. Clone the Repository
+### 1 Clone Repository
 
-```id="setup01"
+```
 git clone <repository-url>
-cd rayeva-ai-assignment/backend
+cd rayeva-ai-assignment
 ```
 
 ---
 
-### 2. Install Dependencies
+### 2 Install Dependencies
 
-```id="setup02"
+```
 npm install
 ```
 
 ---
 
-### 3. Configure Environment Variables
+### 3 Configure Environment Variables
 
-Create a `.env` file in the project root.
+Create a `.env` file.
 
 Example:
 
-```id="setup03"
+```
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 GEMINI_API_KEY=your_gemini_api_key
@@ -124,94 +220,97 @@ GEMINI_API_KEY=your_gemini_api_key
 
 ---
 
-### 4. Start the Server
+### 4 Start Servers
 
-```id="setup04"
+For Module 1:
+
+```
 npm run dev
 ```
 
-The server will start at:
+For Module 2:
 
-```id="setup05"
-http://localhost:5000
+```
+node app.js
 ```
 
 ---
 
-## API Endpoints
+# Module 1 API Endpoints
 
-### 1. Generate Product Category
+### Generate Product Category
 
-**POST**
+POST
 
-```id="api01"
+```
 /api/products/generate
 ```
 
-This endpoint sends product information to the AI model and returns structured data.
+Example request:
 
-#### Example Request
-
-```json id="api02"
+```
 {
   "name": "Linen Summer Shirt",
-  "description": "Lightweight breathable linen shirt suitable for hot weather and casual wear"
+  "description": "Lightweight breathable linen shirt suitable for hot weather"
 }
 ```
 
 ---
 
-#### Example Response
+### Get All Products
 
-```json id="api03"
-{
-  "success": true,
-  "product": {
-    "name": "Linen Summer Shirt",
-    "description": "Lightweight breathable linen shirt suitable for hot weather and casual wear",
-    "category": "Apparel",
-    "subcategory": "Linen Shirts",
-    "seo_tags": [
-      "linen shirt",
-      "summer shirt",
-      "breathable shirt",
-      "casual wear",
-      "lightweight clothing"
-    ],
-    "sustainability_filters": [],
-    "confidence_score": 90
-  }
-}
+GET
+
 ```
-
----
-
-### 2. Get All Stored Products
-
-**GET**
-
-```id="api04"
 /api/products
 ```
 
-Returns all products stored in the database.
+Returns all products stored in MongoDB.
+
+---
+
+# Module 2 API Endpoints
+
+### Generate B2B Proposal
+
+POST
+
+```
+/api/proposal/generate
+```
+
+Example request:
+
+```
+{
+  "company_name": "GreenTech Solutions",
+  "industry": "IT",
+  "budget": 50000,
+  "product_category": "office supplies",
+  "sustainability_focus": ["plastic-free","recycled"]
+}
+```
 
 Example response:
 
-```json id="api05"
+```
 {
-  "success": true,
-  "products": []
+ "success": true,
+ "proposal": {
+   "product_mix": [],
+   "total_cost": 48000,
+   "budget_allocation": "",
+   "estimated_cost_breakdown": {},
+   "impact_summary": ""
+ }
 }
 ```
 
 ---
 
-## AI Processing Flow
+# AI Processing Flow
 
-The backend follows this process when generating product metadata:
-
-```id="flow01"
+```
 Client Request
       │
       ▼
@@ -224,57 +323,47 @@ AI Service (Gemini)
 AI Response
       │
       ▼
-Response Validation
+Validation & Business Logic
       │
       ▼
-MongoDB Storage
-      │
-      ▼
-Final API Response
+Database Storage / API Response
 ```
-
-This ensures that **only valid and structured AI results are stored.**
 
 ---
 
-## Testing the API
+# Testing the API
 
-You can test the API using tools like:
+You can test using:
 
 * Postman
-* Thunder Client (VS Code)
+* Thunder Client
 * cURL
 
-Example request body:
+---
 
-```json id="test01"
-{
- "name": "Wireless Bluetooth Earbuds",
- "description": "Noise cancelling earbuds with long battery life and charging case"
-}
-```
+# Future Improvements
+
+Possible enhancements:
+
+* AI powered product similarity detection
+* Smart SEO ranking
+* Advanced proposal customization
+* Frontend dashboard for proposals
+* AI fallback models
 
 ---
 
-## Possible Future Improvements
+# Conclusion
 
-Some additional features that could enhance the system:
+This project demonstrates how AI can be integrated into backend systems to automate real-world ecommerce and B2B business workflows.
 
-* AI-based **duplicate product similarity detection**
-* Automatic **product title optimization**
-* Smart **SEO tag ranking**
-* Product **search API**
-* AI fallback system for low confidence predictions
+By combining **AI generation, validation, and backend architecture**, the system provides scalable and intelligent automation for product catalog management and proposal generation.
 
 ---
 
-## Conclusion
+# Author
 
-This project demonstrates how AI can be integrated into a backend system to automate tasks commonly found in ecommerce platforms. By combining **AI classification, validation, and database storage**, the system can efficiently organize product data while maintaining reliability.
+Shubham Khanzode
 
----
-
-## Author
-
-Backend AI Assignment
+AI Internship Backend Assignment
 Node.js + Express + MongoDB + Gemini AI

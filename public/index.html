@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rayeva AI Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Rayeva AI Platform</h1>
+<p>AI Powered Product Intelligence</p>
+</header>
+
+
+<div class="container">
+
+<!-- Generator Switch -->
+<div class="generator-tabs">
+
+<button onclick="showGenerator('category')" class="active" id="tab-category">
+Category Generator
+</button>
+
+<button onclick="showGenerator('proposal')" id="tab-proposal">
+Proposal Generator
+</button>
+
+</div>
+
+
+<!-- INPUT SECTION -->
+<div class="card">
+
+<!-- MODULE 1 -->
+<div id="categoryGenerator">
+
+<h2>AI Category & Tag Generator</h2>
+
+<label>Product Name</label>
+<input id="productName" placeholder="Wireless Gaming Mouse">
+
+<label>Description</label>
+<textarea id="productDesc"></textarea>
+
+<button onclick="generateTags()">Generate Tags</button>
+
+</div>
+
+
+<!-- MODULE 2 -->
+<div id="proposalGenerator" style="display:none">
+
+<h2>AI B2B Proposal Generator</h2>
+
+<label>Company Name</label>
+<input id="clientName">
+
+<label>Industry</label>
+<input id="industry">
+
+<label>Budget</label>
+<input id="budget">
+
+<button onclick="generateProposal()">Generate Proposal</button>
+
+</div>
+
+</div>
+
+
+<!-- RESULT PANEL -->
+<div class="result-panel">
+
+<h3>AI Result</h3>
+
+<pre id="resultOutput">
+Result will appear here...
+</pre>
+
+</div>
+
+</div>
+
+
+<footer>
+Rayeva AI Assignment Demo
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

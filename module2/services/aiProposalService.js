@@ -16,7 +16,7 @@ Company: ${data.company_name}
 Industry: ${data.industry}
 Budget: ₹${data.budget} INR
 Category: ${data.product_category}
-Focus: ${data.sustainability_focus.join(", ")}
+Focus: ${(data.sustainability_focus || []).join(", ")}
 
 Return ONLY valid JSON:
 
@@ -49,9 +49,19 @@ async function generateProposal(data) {
     "logs/ai_logs.txt",
     `PROMPT:\n${prompt}\n\nRESPONSE:\n${response}\n\n`
   );
- const cleanJSON = response.replace(/```json|```/g, "");
- 
-const proposal = JSON.parse(cleanJSON);
+const cleanJSON = response
+  .replace(/```json/g, "")
+  .replace(/```/g, "")
+  .trim();
+
+/* extract JSON block */
+const jsonMatch = cleanJSON.match(/\{[\s\S]*\}/);
+
+if (!jsonMatch) {
+  throw new Error("AI did not return valid JSON");
+}
+
+const proposal = JSON.parse(jsonMatch[0]);
 
 const totalCost = calculateTotal(proposal.product_mix);
 
